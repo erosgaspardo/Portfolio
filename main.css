@@ -43,7 +43,7 @@ nav {
 .closebtn {
     display: grid;
     align-content: center;
-    margin: .5em;
+    margin: 8px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
@@ -203,7 +203,7 @@ div .swiper-button-next {
     }
 
     .text {
-        padding-top: .75em;
+        padding-top: .6em;
     }
 
     #cross img {
