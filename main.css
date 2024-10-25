@@ -19,7 +19,7 @@ body {
     font-family: 'Neue Regrade';
     font-weight: 500;
     background-color: white;
-    overflow: hidden;
+/*     overflow: hidden; */
 }
 
 a {
