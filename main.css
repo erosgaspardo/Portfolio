@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-synthesis: none !important;
+}
+
+::selection {
+    color: black;
+    background: white;
+}
+
+@font-face {
+    font-family: 'Neue Regrade';
+    src: url(/assets/font/Neue\ Regrade\ Variable.ttf);
+}
+
+body {
+    font-family: 'Neue Regrade';
+    font-weight: 500;
+    background-color: white;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    z-index: 99999;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 9; 
+    mix-blend-mode: difference;
+}
+
+.item,
+.closebtn {
+    display: grid;
+    align-content: center;
+    margin: .5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.item {
+    z-index: 30;
+}
+
+#cross {
+    justify-content: end;
+}
+
+#cross img {
+    width: 32px; 
+    height: 32px;
+}
+
+main {
+    position: absolute;
+}
+
+#overlay-wrapper {
+    height: 100dvh;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    width: 0;
+    opacity: 0;
+    color: white;
+}
+
+#overlay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    color: white;
+    width: 0;
+    z-index: 9999;
+}
+
+.text{
+    padding: .7em 2.5em 0 .7em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    text-indent: 3em;
+    font-size: 20px;
+}
+
+.contact {
+    text-indent: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #505050;
+}
+
+.contact span {
+    display: inline-block;
+    font-size: .6em;
+    color: rgb(201, 201, 201);
+}
+
+.closebtn {
+    z-index: 999;
+}
+
+
+.swiper {
+  width: 100vw;
+  height: 100dvh;
+  z-index: 999;
+  position: absolute;
+  top:0;
+}
+
+.swiper img {
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    object-position:left top;
+}
+
+#overlay-wrapper, #overlay {
+    transition: opacity .5s ease; /* Transition width and opacity */
+}
+
+#swiper {
+    transition: opacity .5s ease; /* Transition opacity */
+}
+
+
+span {
+    display: block;
+}
+
+nav {
+    overflow: hidden;
+}
+
+#cross {
+    overflow: hidden;
+}
+
+div .swiper-button-prev {
+    color: transparent;
+    width: 50%;
+    height: 90%;
+    transform: translateY(-48%);
+    cursor: w-resize;
+}
+
+div .swiper-button-next {
+    color: transparent;
+    width: 50%;
+    height: 90%;
+    transform: translateY(-48%);
+    cursor: e-resize;
+}
+
+#credits {
+    font-size: 16px;
+    position: fixed;
+    bottom: .5em;
+    right: .5em;
+    color: #b7b7b7;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .swiper img {
+        width: 100%;
+        height: 100dvh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .item {
+        font-size: 16px;
+    }
+
+
+    .text,
+    .contact {
+        font-size: 16px;
+        padding-right: .5em;
+    }
+
+    #text-top {
+        padding-right: 1em;
+    }
+
+    .text {
+        padding-top: .75em;
+    }
+
+    #cross img {
+        width: 24px; 
+        height: 24px;
+    }
+
+}
