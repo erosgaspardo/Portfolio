@@ -30,7 +30,7 @@ const swiper = new Swiper('.swiper', {
     speed: 800,
     autoplay: {
       delay: 2800,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     navigation: {
       nextEl: '.swiper-button-next',
