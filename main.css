@@ -157,7 +157,7 @@ div .swiper-button-prev {
     width: 50%;
     height: 90%;
     transform: translateY(-48%);
-    cursor: w-resize;
+    cursor: url(/assets/left.svg), auto;
 }
 
 div .swiper-button-next {
@@ -165,7 +165,7 @@ div .swiper-button-next {
     width: 50%;
     height: 90%;
     transform: translateY(-48%);
-    cursor: e-resize;
+    cursor: url(/assets/right.svg), auto;
 }
 
 #credits {
