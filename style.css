@@ -194,7 +194,7 @@ h1 {
 
 .more {
     text-indent: 0;
-    height: 33vh; /* temporary until there is more text */
+    height: 32vh; /* temporary until there is more text */
 }
 
 @media only screen and (max-width: 600px) {
