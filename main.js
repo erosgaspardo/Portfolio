@@ -21,7 +21,7 @@ function toggleOverlay() {
 }
 
 gsap.set(".copy span", {
-  y: 330,
+  y: 350,
 });
 
 function triggerCopyAnimation() {
