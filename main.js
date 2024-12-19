@@ -22,6 +22,17 @@ function toggleOverlay() {
 
 gsap.set(".copy span", {
   y: 350,
+})
+
+gsap.set(".logo, .button", {
+  y: -50,
+});
+
+gsap.timeline()
+.to(".logo, .button", {
+  y:0,
+  delay: 1,
+  stagger: -0.1,
 });
 
 function triggerCopyAnimation() {
